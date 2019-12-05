@@ -1,11 +1,13 @@
-# CSUFT
+# CSUFT_classs_schedule
+
+将中南林业科技大学教务系统课表导出为 ics 日历。
 
 ## TODO
 
-- 解决周次为 `1-6,8,10-17` 甚至分割次数更多的奇葩
+- 解决周次为 `1-6,8,10-17` 或分割次数更多的奇葩
 - 登录失败处理
 - 多次输错密码时对验证码的处理
-- 重构代码，参考 Wakeup 课程表优化解析过程
+- 重构代码，参考 [Wakeup 课程表](https://github.com/YZune/WakeupSchedule_Kotlin) 优化解析过程
 
 ## 课表解析要注意的地方
 
