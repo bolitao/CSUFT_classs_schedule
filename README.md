@@ -4,9 +4,9 @@
 
 ## Usage
 
-需要 Python 3 版本。
+下载或 clone 本项目，切换分支到 `csuft`。
 
-安装依赖：
+本项目运行需要 Python 3，安装依赖：
 
 ```bash
 pip install -r requirements.txt
