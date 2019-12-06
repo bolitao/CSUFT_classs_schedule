@@ -1,6 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-from getpass import getpass
 import encrypt
 
 login_page_url = "http://authserver.csuft.edu.cn/authserver/login?service=http%3A%2F%2Fjwgl.csuft.edu.cn%2F"
@@ -8,10 +7,7 @@ login_post_url = "http://authserver.csuft.edu.cn/authserver/login?service=http%3
 table_page = "http://jwgl.csuft.edu.cn/jsxsd/xskb/xskb_list.do"
 
 
-def login():
-    username = input("学号：")
-    # password = getpass("密码: ")
-    password = input("密码: ")  # 开发环境不要用 getpass()
+def login(username, password):
     _session = requests.session()
     response = _session.get(login_page_url)
     content = BeautifulSoup(response.text, "lxml")

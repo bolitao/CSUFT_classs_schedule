@@ -62,7 +62,8 @@ def parse_table(_session):
                              "place": place, "day_of_week": day_of_week, "period": period}
                 info = [low_info, high_info]
                 return info
-            else:
+            elif not week.__contains__(','):
+                # else:
                 start = week.split('-')[0]
                 end = week.split('-')[1]
                 info = {"subject": subject, "teacher": teacher, "start": start, "end": end, "place": place,
@@ -128,8 +129,9 @@ def parse_table(_session):
                 for i in front_data:
                     table_data.append(i)
                 end_data = resolve_segment(end, class_count)
-                for i in end_data:
-                    table_data.append(i)
+                if end_data != None:
+                    for i in end_data:
+                        table_data.append(i)
             class_count += 1
     # for i in table_data:
     #     print(i)
