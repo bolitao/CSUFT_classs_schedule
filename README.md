@@ -4,6 +4,14 @@
 
 ## Usage
 
+### 可执行文件运行
+
+[release](https://github.com/bolitao/CSUFT_classs_schedule/releases) 页下载对应平台的可执行文件，在终端执行程序。Windows 也可双击 exe 文件直接运行。
+
+运行后会在同级目录生成 `课程表.ics` 文件。
+
+### 通过源码运行
+
 下载或 clone 本项目，切换分支到 `csuft`。
 
 本项目运行需要 Python 3，安装依赖：
@@ -23,8 +31,6 @@ pip install lxml
 ```bash
 python main.py
 ```
-
-运行后会在 Python 文件同级目录生成 `课程表.ics` 文件。
 
 ## BUG
 
