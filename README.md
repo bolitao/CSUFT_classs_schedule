@@ -6,6 +6,8 @@
 
 ### 可执行文件运行
 
+原库不小心删了🌚，release 二进制文件已删除，请使用源码运行。
+
 [release](https://github.com/bolitao/CSUFT_classs_schedule/releases) 页下载对应平台的可执行文件，在终端执行程序。Windows 也可双击 exe 文件直接运行。
 
 运行后会在同级目录生成 `课程表.ics` 文件。
